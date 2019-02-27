@@ -1,14 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
+<<<<<<< HEAD
 const bodyParser = require("body-parser");
 //routes
 const home = require("./routes/home");
+=======
+<<<<<<< HEAD
+const bodyParser = require("body-parser");
+//routes
+const home = require("./routes/home");
+=======
+>>>>>>> master
+>>>>>>> 7a9360ecbceea4f5686b4c9fdf3014c27a97af98
 const app = express();
 class App {
     constructor() {
         this.app = express();
         this.port = 3000;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7a9360ecbceea4f5686b4c9fdf3014c27a97af98
         this.app.use((req, res, next) => {
             // Website you wish to allow to connect
             res.setHeader('Access-Control-Allow-Origin', '*'); // '*' for all websites or specified eg:'http://localhost:4200'
@@ -36,6 +49,11 @@ class App {
         this.app.use(bodyParser.json());
         this.app.use('/home', home);
         //routes
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+>>>>>>> 7a9360ecbceea4f5686b4c9fdf3014c27a97af98
         this.app.get('/', (req, res) => {
             res.send('node js with ts is nice');
         });
