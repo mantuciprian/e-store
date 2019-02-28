@@ -1,2 +1,7 @@
 # e-store
-E-commerce app simulation 
+E-commerce app simulation
+
+To start the app:
+npm install
+
+npm start
