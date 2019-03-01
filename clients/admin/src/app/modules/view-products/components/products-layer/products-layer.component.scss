@@ -1,0 +1,18 @@
+.products-layer {
+    height: 100vh;
+    background-color:#3778C2;
+    color: #FFF;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    app-products-list {
+        height: 100%;
+        width: 75%;
+    }
+
+    app-filter-panel {
+        height: 100%;
+        width: 25%;
+    }
+}
