@@ -1,0 +1,23 @@
+.filter-panel {
+    height: 100%;
+    .search {
+      text-align: center;
+      padding: 5px;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      .search-container {
+        padding: 10px 0px;
+
+        .search-input {
+            width: 80%;
+            border-radius: 7px;
+            border: 2px;
+            height: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+      }
+
+    }
+}

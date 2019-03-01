@@ -1,0 +1,33 @@
+.panel {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #7DA2A9;
+    margin: auto;
+    height: 100%;
+
+    .tab {
+        width: 400px;
+        height: 400px;
+        background-color: #7F8688;
+        color: #FFF;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+          color: #FFF;
+        }
+    }
+
+    .tab:hover {
+        background-color: #929D9E;
+    }
+}
