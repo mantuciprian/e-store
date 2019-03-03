@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { ViewProductsRoutingModule } from './view-products-routing.module';
 import { ProductsLayerComponent } from './components/products-layer/products-layer.component';
@@ -14,7 +16,9 @@ import { SearchService } from './services/component-services/search/search.servi
   imports: [
     CommonModule,
     ViewProductsRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [SearchService]
 })

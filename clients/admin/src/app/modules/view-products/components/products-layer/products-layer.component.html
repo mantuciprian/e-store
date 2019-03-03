@@ -1,4 +1,10 @@
 <div class='products-layer'>
-  <app-filter-panel></app-filter-panel>
+  <div [ngStyle]="{'width': slide? '300px': '30px', 'transition': '0.6s'}" class='filter-panel-container'>
+      <app-filter-panel [@slider]="slide? 'slide-left':'slide-right'"></app-filter-panel>
+      <div (click)="slideMenu()" class='slide-menu'>
+        <div *ngIf='slide === false'>></div>
+        <div *ngIf='slide === true'><</div>
+      </div>
+  </div>
   <app-products-list></app-products-list>
 </div>

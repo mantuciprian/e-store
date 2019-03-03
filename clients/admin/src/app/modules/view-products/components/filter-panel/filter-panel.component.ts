@@ -1,10 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { SearchService } from '../../services/component-services/search/search.service';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 @Component({
   selector: 'app-filter-panel',
   templateUrl: './filter-panel.component.html',
-  styleUrls: ['./filter-panel.component.scss']
+  styleUrls: ['./filter-panel.component.scss'],
+  animations: [
+    // animation triggers go here
+  ]
 })
 export class FilterPanelComponent implements OnInit {
   searchBy: any;
@@ -14,6 +23,6 @@ export class FilterPanelComponent implements OnInit {
     this.searchBy = '';
   }
   performSearch() {
-    this.search.performSearch(this.searchBy)
+    this.search.performSearch(this.searchBy);
   }
 }

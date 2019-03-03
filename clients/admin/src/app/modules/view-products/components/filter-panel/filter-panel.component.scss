@@ -1,23 +1,46 @@
-.filter-panel {
-    height: 100%;
-    .search {
-      text-align: center;
-      padding: 5px;
-      font-size: 16px;
-      font-family: Arial, Helvetica, sans-serif;
+// .filter-panel {
+//     height: 100%;
+//     .search {
+//       text-align: center;
+//       padding: 5px;
+//       font-size: 16px;
+//       font-family: Arial, Helvetica, sans-serif;
 
-      .search-container {
-        padding: 10px 0px;
+//       .search-container {
+//         padding: 10px 0px;
 
-        .search-input {
-            width: 80%;
-            border-radius: 7px;
-            border: 2px;
-            height: 20px;
-            font-size: 15px;
-            text-align: center;
-        }
-      }
+//         .search-input {
+//             width: 80%;
+//             border-radius: 7px;
+//             border: 2px;
+//             height: 20px;
+//             font-size: 15px;
+//             text-align: center;
+//         }
+//       }
 
-    }
-}
+//     }
+
+//     // .slide-menu {
+//     //   width: 30px;
+//     //   height: 80px;
+//     //   background-color: black;
+//     //   position: absolute;
+//     //   right: -25px;
+//     //   // left: 0px;
+//     //   top: 50%;
+//     //   display: flex;
+//     //   text-align: center;
+//     //   justify-content: center;
+//     //   align-items: center;
+//     //   display: block;
+//     //   z-index: 2;
+//     // }
+// }
+@media screen and (max-width: 768px) {
+  .filter-panel {
+   background-color: rgba(0, 0, 0, 0.712);
+   height: 100%;
+  }
+} 
+

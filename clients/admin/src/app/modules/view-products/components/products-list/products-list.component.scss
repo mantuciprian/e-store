@@ -4,6 +4,7 @@
     position: relative;
     box-sizing: border-box;
     overflow: scroll;
+    overflow-x: hidden;
 
     .product {
         background-color: #3778C2;

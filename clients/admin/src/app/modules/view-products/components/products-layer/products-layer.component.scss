@@ -3,16 +3,51 @@
     background-color:#3778C2;
     color: #FFF;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width:100%;
 
+    .filter-panel-container {
+      width: 25%;
+      display: flex;
+      app-filter-panel {
+        width: 100%;
+      }
+      .slide-menu {
+        width: 30px;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.726);
+        position: relative;
+        top: 50%;
+        display:none;
+      }
+    }
     app-products-list {
-        height: 100%;
-        width: 75%;
+      width: 75%;
     }
-
-    app-filter-panel {
-        height: 100%;
-        width: 25%;
+}
+@media screen and (min-width: 768px) {
+  .filter-panel-container {
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products-layer {
+    .filter-panel-container {
+      width: 300px;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      app-filter-panel {
+        width: 0px;
+        overflow: hidden;
+      }
+      .slide-menu { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
+    app-products-list {
+      width: 100%;
+    }
+  }
 }
