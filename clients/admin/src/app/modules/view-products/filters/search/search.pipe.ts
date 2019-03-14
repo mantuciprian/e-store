@@ -10,7 +10,9 @@ export class SearchPipe implements PipeTransform {
   transform(products: any): any {
     const searchBy = this.searchService.getSearchedValue();
     if (searchBy !== undefined || '') {
-      return products.filter((product) => { return product.toString().indexOf(searchBy) !== -1});
+      return products.filter((product) => { return product.product_name.toLowerCase().
+        indexOf(searchBy.toString().toLowerCase()) !== -1;
+      });
     } else {
       return products;
     }

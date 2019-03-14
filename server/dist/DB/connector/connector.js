@@ -6,7 +6,7 @@ const pool = new pg_1.Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'e-store',
-    password: '12345',
+    password: 'ciprian',
     port: 5432,
 });
 module.exports = pool;

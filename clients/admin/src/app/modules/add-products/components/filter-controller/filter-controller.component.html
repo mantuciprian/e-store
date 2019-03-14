@@ -1,0 +1,23 @@
+<div class='category-panel'>
+  <div class='panel-title'>Categories</div>
+  <div class='category' *ngFor='let category of categories; let index = index'>
+    <div class='category_name'>
+      <div *ngIf ='!category.isEditing'>{{category.category_name}}</div>
+      <div *ngIf ='category.isEditing'><input [(ngModel)]='category.category_name' type="text"/></div>
+    </div> 
+    <div class='options-buttons'>
+      <button *ngIf ='!category.isEditing' (click)='edit(index)' class='btn edit' title='edit'><i class='material-icons'>edit</i></button>
+      <button *ngIf ='category.isEditing' (click)='edit(index)' class='btn save' title='save'><i class='material-icons'>save</i></button>
+      <button class='btn delete' title='delete'><i class='material-icons'>delete</i></button>
+    </div>
+  </div>
+
+  <div class='add_category'>
+    <div><input class='add-category-input' type="text" /></div>
+    <div>
+      <button class='add-btn'>
+         Add
+      </button>
+    </div>
+  </div>
+</div>
