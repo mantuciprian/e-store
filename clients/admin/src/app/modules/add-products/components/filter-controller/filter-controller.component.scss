@@ -1,0 +1,77 @@
+.category-panel {
+    width: 350px;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    .panel-title {
+     font-size: 24px;
+     padding: 10px;
+     box-sizing: border-box;
+    }
+    .category {
+      width: 300px;
+      height: 60px;
+      background-color: #4B9FE1;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      position: relative;
+      .options-buttons {
+        position: absolute;
+        right: 5px;
+        .btn {
+          border-radius: 7px;
+          width: 45px;
+          margin:0px 5px;
+        }
+        .edit {
+         background-color: lightgreen;
+         border: 5px solid lightgreen;
+        }
+        .delete {
+          background-color: lightcoral;
+          border: 5px solid lightcoral;
+        }
+        .save {
+          background-color: greenyellow;
+          border: 5px solid greenyellow;
+        }
+      }
+    }
+}
+
+.add_category {
+  width: 300px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: auto;
+  .add-category-input {
+    width: 230px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+  }
+  .add-btn {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #63BCE5;
+    border: 1px solid #63BCE5;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    .btn-item {
+      margin: 0px 2px;
+    }
+  }
+}

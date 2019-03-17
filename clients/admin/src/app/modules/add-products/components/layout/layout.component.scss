@@ -1,0 +1,19 @@
+.layout {
+    min-height: 100vh;
+    background-color: #3778C2;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .component-title {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .panel {
+      display: flex;
+      width: 100%;
+    }
+}

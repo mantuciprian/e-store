@@ -7,6 +7,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import { ProductsServicesService } from '../../services/server-calls/products-services/products-services.service';
 
 @Component({
   selector: 'app-products-list',
@@ -17,12 +18,19 @@ import {
   ]
 })
 export class ProductsListComponent implements OnInit {
-  constructor() { }
   fakeProducts: any[];
+  products: any;
+  categories: any;
+  constructor(private productsServices: ProductsServicesService) { }
+
   ngOnInit() {
     this.fakeProducts = [];
-    for(let i = 0; i < 40; i++) {
-      this.fakeProducts.push(i)
-    }
+    this.productsServices.getProducts().subscribe((products) => {
+      console.log(products);
+      this.products = products;
+    });
+    this.productsServices.getCategories().subscribe((categories) => {
+      this.categories = categories;
+    });
   }
 }
